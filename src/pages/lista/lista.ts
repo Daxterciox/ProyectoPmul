@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { EjercicioaleatorioPage } from '../ejercicioaleatorio/ejercicioaleatorio';
 
 /**
  * Generated class for the ListaPage page.
@@ -21,5 +22,6 @@ export class ListaPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ListaPage');
   }
-
+  
+  Dia1 = EjercicioaleatorioPage;
 }

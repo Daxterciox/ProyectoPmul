@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Ejercicio } from '../../models/Ejercicio/Ejercicio.interface';
+import { EjercicioaleatorioPage } from '../../pages/ejercicioaleatorio/ejercicioaleatorio';
 
 /*
   Generated class for the EjercicioProvider provider.
@@ -21,4 +22,5 @@ private refEjercicios = this.db.list<Ejercicio>("Ejercicio");
   getEjercicioList(){
     return this.refEjercicios;
   }
+
 }

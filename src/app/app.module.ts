@@ -11,6 +11,7 @@ import { ListaPage } from '../pages/lista/lista';
 import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import { EjercicioProvider } from '../providers/ejercicio/ejercicio';
+import { EjercicioaleatorioPage } from '../pages/ejercicioaleatorio/ejercicioaleatorio';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyAwoZUXfjqrADz29_lEqNqqQNt5G2OMxFo",
@@ -25,7 +26,8 @@ export const firebaseConfig = {
   declarations: [
     MyApp,
     HomePage,
-    ListaPage
+    ListaPage,
+    EjercicioaleatorioPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ export const firebaseConfig = {
   entryComponents: [
     MyApp,
     HomePage,
-    ListaPage
+    ListaPage,
+    EjercicioaleatorioPage
   ],
   providers: [
     StatusBar,

@@ -23,4 +23,8 @@ private refEjercicios = this.db.list<Ejercicio>("Ejercicio");
     return this.refEjercicios;
   }
 
+  anadirejercicios(Ejercicio1:Ejercicio){
+    return this.refEjercicios.push(Ejercicio1);
+  }
+
 }

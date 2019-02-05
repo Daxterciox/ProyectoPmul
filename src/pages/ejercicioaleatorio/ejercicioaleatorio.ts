@@ -16,7 +16,7 @@ export class EjercicioaleatorioPage {
 
   listaEjercicios: Observable<Ejercicio[]>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private servicioEjercicio: EjercicioProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public servicioEjercicio: EjercicioProvider) {
 
     this.listaEjercicios = this.servicioEjercicio
     .getEjercicioList()

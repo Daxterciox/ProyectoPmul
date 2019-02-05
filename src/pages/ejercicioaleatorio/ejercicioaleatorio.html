@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>ejercicioaleatorio</ion-title>
+    <ion-title>Ejercicios de pecho</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,11 +15,13 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor="let ejercicio of listaEjercicios | async">
-      <h1>
-        <b>{{Ejercicio.Tipo}}</b>
-      </h1>
-    </ion-item>
+    <div *ngFor="let ejercicio of listaEjercicios | async" >
+      <ion-item *ngIf="ejercicio.Categoria == 'pecho' ">
+        <h1>
+          <b>{{ejercicio.Tipo}}</b>
+        </h1>
+        <p>Repeticiones: {{ejercicio.Repeticiones}}</p>
+      </ion-item>
+    </div>
   </ion-list>
-
 </ion-content>

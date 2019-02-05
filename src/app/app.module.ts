@@ -12,6 +12,7 @@ import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import { EjercicioProvider } from '../providers/ejercicio/ejercicio';
 import { EjercicioaleatorioPage } from '../pages/ejercicioaleatorio/ejercicioaleatorio';
+import { PruebaPage } from '../pages/prueba/prueba';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyAwoZUXfjqrADz29_lEqNqqQNt5G2OMxFo",
@@ -27,20 +28,22 @@ export const firebaseConfig = {
     MyApp,
     HomePage,
     ListaPage,
-    EjercicioaleatorioPage
+    EjercicioaleatorioPage,
+    PruebaPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireModule
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     ListaPage,
-    EjercicioaleatorioPage
+    EjercicioaleatorioPage,
+    PruebaPage
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { EjercicioaleatorioPage } from '../ejercicioaleatorio/ejercicioaleatorio';
+import { EjerciciobicepsPage } from '../ejerciciobiceps/ejerciciobiceps';
+import { EjerciciopiernasPage } from '../ejerciciopiernas/ejerciciopiernas';
+import { EjercicioabdominalesPage } from '../ejercicioabdominales/ejercicioabdominales';
 
 /**
  * Generated class for the ListaPage page.
@@ -23,5 +26,11 @@ export class ListaPage {
     console.log('ionViewDidLoad ListaPage');
   }
   
-  Dia1 = EjercicioaleatorioPage;
+  Ejerciciospecho = EjercicioaleatorioPage;
+
+  Ejerciciosbiceps = EjerciciobicepsPage;
+
+  Ejerciciospiernas = EjerciciopiernasPage;
+
+  Ejerciciosabdominales = EjercicioabdominalesPage;
 }

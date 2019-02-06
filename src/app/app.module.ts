@@ -13,6 +13,10 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import { EjercicioProvider } from '../providers/ejercicio/ejercicio';
 import { EjercicioaleatorioPage } from '../pages/ejercicioaleatorio/ejercicioaleatorio';
 import { PruebaPage } from '../pages/prueba/prueba';
+import { EjerciciobicepsPage } from '../pages/ejerciciobiceps/ejerciciobiceps';
+import { EjerciciopiernasPage } from '../pages/ejerciciopiernas/ejerciciopiernas';
+import { EjercicioabdominalesPage } from '../pages/ejercicioabdominales/ejercicioabdominales';
+import { TemporizadorPage } from '../pages/temporizador/temporizador';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyAwoZUXfjqrADz29_lEqNqqQNt5G2OMxFo",
@@ -29,7 +33,11 @@ export const firebaseConfig = {
     HomePage,
     ListaPage,
     EjercicioaleatorioPage,
-    PruebaPage
+    PruebaPage,
+    EjerciciobicepsPage,
+    EjerciciopiernasPage,
+    EjercicioabdominalesPage,
+    TemporizadorPage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +51,11 @@ export const firebaseConfig = {
     HomePage,
     ListaPage,
     EjercicioaleatorioPage,
-    PruebaPage
+    PruebaPage,
+    EjerciciobicepsPage,
+    EjerciciopiernasPage,
+    EjercicioabdominalesPage,
+    TemporizadorPage
   ],
   providers: [
     StatusBar,

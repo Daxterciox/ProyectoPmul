@@ -1,19 +1,28 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+
+
 import { EjercicioProvider } from '../../providers/ejercicio/ejercicio';
-import { TemporizadorPage } from '../../pages/temporizador/temporizador'
 
 import { Observable } from 'rxjs/Observable';
 import {map} from 'rxjs/operators';
 import { Ejercicio } from '../../models/Ejercicio/Ejercicio.interface';
 
+
+/**
+ * Generated class for the EjerciciobicepsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
 @IonicPage()
 @Component({
-  selector: 'page-ejercicioaleatorio',
-  templateUrl: 'ejercicioaleatorio.html',
+  selector: 'page-ejerciciobiceps',
+  templateUrl: 'ejerciciobiceps.html',
 })
-export class EjercicioaleatorioPage {
-
+export class EjerciciobicepsPage {
 
   listaEjercicios: Observable<Ejercicio[]>;
 
@@ -31,14 +40,6 @@ export class EjercicioaleatorioPage {
         )
       }
       ))
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EjercicioaleatorioPage');
-  }
-
-  temporizador(descanso: number){
-    this.navCtrl.push(TemporizadorPage, descanso); 
-  }
+}
 
 }

@@ -14,13 +14,14 @@
 
 
 <ion-content padding>
+    <img src="../../assets/imgs/biceps.png">
   <ion-list>
     <div *ngFor="let ejercicio of listaEjercicios | async" >
-      <ion-item *ngIf="ejercicio.Categoria == 'biceps' ">
+      <ion-item *ngIf="ejercicio.Categoria == 'biceps' " (click)="temporizador(ejercicio.Descanso)">
         <h1>
           <b>{{ejercicio.Tipo}}</b>
         </h1>
-        <p>Repeticiones: {{ejercicio.Repeticiones}}</p>
+        <p style="color: orange">Repeticiones: {{ejercicio.Repeticiones}}</p>
       </ion-item>
     </div>
   </ion-list>

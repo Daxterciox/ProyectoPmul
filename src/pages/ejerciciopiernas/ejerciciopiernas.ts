@@ -6,6 +6,7 @@ import { EjercicioProvider } from '../../providers/ejercicio/ejercicio';
 import { Observable } from 'rxjs/Observable';
 import {map} from 'rxjs/operators';
 import { Ejercicio } from '../../models/Ejercicio/Ejercicio.interface';
+import { TemporizadorPage } from '../temporizador/temporizador';
 
 /**
  * Generated class for the EjerciciopiernasPage page.
@@ -38,4 +39,11 @@ export class EjerciciopiernasPage {
       ))
   }
 
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad EjercicioaleatorioPage');
+  }
+  
+  temporizador(descanso: number){
+    this.navCtrl.push(TemporizadorPage, descanso); 
+  }
 }

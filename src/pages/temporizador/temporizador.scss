@@ -1,11 +1,20 @@
 page-temporizador b {
-font-size: 3em;
-padding: 5%;
+font-size: 2em;
+padding-left: 10%;
+position: relative;
+top: 3em;
 }
 
 page-temporizador p {
     font-size: 3em;
-    position: relative;
-    top: 60%;
+    position: absolute;
+    top: 70%;
     left: 45%;
+}
+
+page-temporizador #cargando{
+    width: 30%;
+    position: absolute;
+    top: 27%;
+    left: 35%;
 }
